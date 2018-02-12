@@ -1,0 +1,38 @@
+﻿<EntityEndpoint>
+    <Endpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="LicencingAPI" version="1" systemContractVersion="3" xmlns="http://www.acumatica.com/entity/maintenance/5.31">
+        <TopLevelEntity name="AMLicenseSetup" screen="AM101010">
+            <Fields>
+                <Field name="ACMInstallID" type="GuidValue" />
+                <Field name="CompanyName" type="StringValue" />
+                <Field name="CompanyURL" type="StringValue" />
+                <Field name="LicenseBeginLicenseBegin" type="DateTimeValue" />
+                <Field name="LicenseBeginLicenseEnd" type="DateTimeValue" />
+                <Field name="LicenseID" type="StringValue" />
+                <Field name="LicenseKey" type="GuidValue" />
+            </Fields>
+            <Mappings>
+                <Mapping field="CompanyName">
+                    <To object="PagePrimaryView" field="CompanyName" />
+                </Mapping>
+                <Mapping field="CompanyURL">
+                    <To object="PagePrimaryView" field="InstanceUrl" />
+                </Mapping>
+                <Mapping field="LicenseBeginLicenseBegin">
+                    <To object="PagePrimaryView" field="LicenseBegin" />
+                </Mapping>
+                <Mapping field="LicenseID">
+                    <To object="PagePrimaryView" field="LicenseCD" />
+                </Mapping>
+                <Mapping field="LicenseBeginLicenseEnd">
+                    <To object="PagePrimaryView" field="LicenseEnd" />
+                </Mapping>
+                <Mapping field="ACMInstallID">
+                    <To object="PagePrimaryView" field="LicenseInstallationID" />
+                </Mapping>
+                <Mapping field="LicenseKey">
+                    <To object="PagePrimaryView" field="LicenseKey" />
+                </Mapping>
+            </Mappings>
+        </TopLevelEntity>
+    </Endpoint>
+</EntityEndpoint>

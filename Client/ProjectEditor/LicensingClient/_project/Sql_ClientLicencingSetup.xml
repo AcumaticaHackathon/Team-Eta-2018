@@ -1,0 +1,24 @@
+﻿<Sql TableName="ClientLicencingSetup" TableSchemaXml="#CDATA">
+    <CDATA name="TableSchemaXml"><![CDATA[<table name="ClientLicencingSetup">
+  <col name="CompanyID" type="Int" default="Zero" />
+  <col name="CustomizationID" type="NVarChar(255)" />
+  <col name="LicenceKey" type="UniqueIdentifier" />
+  <col name="IsValid" type="Bit" default="Zero" />
+  <col name="Url" type="NVarChar(255)" />
+  <col name="Username" type="NVarChar(255)" />
+  <col name="Password" type="NVarChar(255)" />
+  <col name="LastValidationDate" type="SmallDateTime" nullable="true" />
+  <col name="Description" type="NVarChar(255)" nullable="true" />
+  <col name="WindowDays" type="Int" nullable="true" />
+  <col name="CreatedByID" type="UniqueIdentifier" />
+  <col name="CreatedByScreenID" type="Char(8)" />
+  <col name="CreatedDateTime" type="SmallDateTime" />
+  <col name="LastModifiedByID" type="UniqueIdentifier" />
+  <col name="LastModifiedByScreenID" type="Char(8)" />
+  <col name="LastModifiedDateTime" type="SmallDateTime" />
+  <index name="PK_ClientLicencingSetup_1" clustered="true" primary="true" unique="true">
+    <col name="CompanyID" />
+    <col name="CustomizationID" />
+  </index>
+</table>]]></CDATA>
+</Sql>
